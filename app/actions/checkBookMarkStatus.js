@@ -4,7 +4,7 @@ import User from "@/models/User";
 import { getSessionUser } from "@/utils/getSessionUser";
 import { revalidatePath } from "next/cache";
 
-async function bookMarkProperty(propertyId) {
+async function checkbookMarkStatus(propertyId) {
   await connectDB();
   const sessionUser = await getSessionUser();
 
@@ -21,25 +21,11 @@ async function bookMarkProperty(propertyId) {
 
   let isBookMarked = user.bookmarks.includes(propertyId); // ✅ fixed here
 
-  let message;
-
-  if (isBookMarked) {
-    user.bookmarks.pull(propertyId); // ✅ fixed here
-    message = 'Bookmark Removed';
-    isBookMarked = false;
-  } else {
-    user.bookmarks.push(propertyId); // ✅ fixed here
-    message = 'Bookmark Added';
-    isBookMarked = true;
-  }
-
-  await user.save();
-  revalidatePath('/properties/saved', 'page');
+  
 
   return {
-    message,
     isBookMarked
   };
 }
 
-export default bookMarkProperty;
+export default checkbookMarkStatus;

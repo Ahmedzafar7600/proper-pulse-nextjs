@@ -3,6 +3,7 @@ import Link from "next/link";
 import Hero from "@/components/Hero";
 import InfoBoxes from "@/components/InfoBoxes";
 import HomeProperties from "@/components/HomeProperties";
+import FeaturedProperties from "@/components/FeaturedProperties";
 
 
 const HomePage = () => {
@@ -10,6 +11,7 @@ const HomePage = () => {
        {/* <LoadingPage/> */}
        <Hero></Hero>
        <InfoBoxes></InfoBoxes>
+       <FeaturedProperties></FeaturedProperties>
        <HomeProperties></HomeProperties>
     </Fragment>
   return <div className="text-2xl">HomePage</div>;
