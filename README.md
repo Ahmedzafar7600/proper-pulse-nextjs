@@ -2,6 +2,8 @@
 
 **PropertyPulse** is a modern full-stack real estate listing application built with **Next.js**, **MongoDB**, **NextAuth**, and **Tailwind CSS**. This project is part of a comprehensive course and serves as a portfolio-worthy demonstration of full-stack development skills, including authentication, property CRUD, search, maps, messaging, and deployment.
 
+🌐 **Live Demo:** [https://proper-pulse-nextjs.vercel.app/](https://proper-pulse-nextjs.vercel.app/)
+
 ---
 
 ## 🚀 Key Features
@@ -13,7 +15,7 @@
 - 💬 Secure internal messaging system
 - 🔍 Real-time search with filters
 - 🌟 Featured properties & lightbox image previews
-- 🚀 Fully deployed on Vercel
+- 🚀 Fully deployed on Vercel ([Live Site](https://proper-pulse-nextjs.vercel.app/))
 
 ---
 
@@ -55,7 +57,7 @@
 - Paginate listings for performance
 - Highlight featured properties
 - Lightbox image previews
-- Final deployment to Vercel
+- Final deployment to Vercel ([Live Site](https://proper-pulse-nextjs.vercel.app/))
 
 ---
 
@@ -69,14 +71,5 @@
 | **Storage**  | Cloudinary for image uploads                   |
 | **Maps**     | Mapbox & Google Geocoding                      |
 | **UX**       | React Toastify, Lightbox, Responsive Design    |
-| **Deployment**| Vercel                                        |
+| **Deployment**| Vercel ([Live Site](https://proper-pulse-nextjs.vercel.app/)) |
 
----
-
-## 📂 Local Setup Instructions
-
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/your-username/propertypulse.git
-cd propertypulse
