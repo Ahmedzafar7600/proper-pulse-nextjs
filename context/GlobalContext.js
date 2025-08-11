@@ -37,4 +37,3 @@ export const useGlobalContext = () => {
     return useContext(GlobalContext);
 };
 export default GlobalContext;
-export { GlobalProvider }; 
